@@ -366,6 +366,7 @@
 "Assets/Scripts/GoalPlaneBehaviour.cs"
 "Assets/Scripts/HorizontalTrapMovement.cs"
 "Assets/Scripts/InventoryUI.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/PickUpRotation.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/RetryGame.cs"

@@ -29,18 +29,12 @@ public class PlayerMovement : MonoBehaviour
     {
         ProcessMovement();
         ProcessGravity();
-
     }
 
     public void LateUpdate()
     {
        UpdateAnimator();
     }
-
-    // void DisableRootMotion()
-    // {
-    //     animator.applyRootMotion = false;  
-    // }
 
     void UpdateAnimator()
     {
@@ -82,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
     public void ProcessGravity()
     {
         bool isGrounded = controller.isGrounded;
-        // Since there is no physics applied on character controller we have this applies to reapply gravity
+        animator.SetBool("IsDoubleJumping", false);
         
         if (isGrounded )
         {
@@ -98,11 +92,12 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (!isGrounded && !hasDoubleJumped) {
+        if (animator.GetBool("CanDoubleJump") == true && !isGrounded && !hasDoubleJumped) {
             if (Input.GetButtonDown("Jump")) // Code to jump
             {
                 hasDoubleJumped = true;
                 playerVelocity.y +=  Mathf.Sqrt(jumpHeight * -3.0f * gravity);
+                animator.SetBool("IsDoubleJumping", true);
             }
             else {
                 playerVelocity.y += gravity * Time.deltaTime;

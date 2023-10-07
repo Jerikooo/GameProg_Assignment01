@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 8d31383b22bc3e24788410dacccb59f6, type: 2}
+    - target: {fileID: 5866666021909216657, guid: db6fe24c2d923664d997b0a4678a6a11, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -70,9 +74,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db6fe24c2d923664d997b0a4678a6a11, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7925022147041519547}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db6fe24c2d923664d997b0a4678a6a11, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 85199396622038565}
   m_SourcePrefab: {fileID: 100100000, guid: db6fe24c2d923664d997b0a4678a6a11, type: 3}
 --- !u!1 &8060507075693872890 stripped
 GameObject:
@@ -121,15 +122,3 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.06, z: 0}
---- !u!114 &85199396622038565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8060507075693872890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c648831f14fe4a4e802c15cb64387af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

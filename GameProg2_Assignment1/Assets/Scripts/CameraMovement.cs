@@ -16,6 +16,6 @@ public class CameraMovement : MonoBehaviour
     {
         float mouseX = Input.GetAxis("Mouse X");
         transform.Rotate(new Vector3(0, mouseX, 0));
-        //transform.position = new Vector3(player.);
+        transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 2, player.transform.position.z - 3);
     }
 }
